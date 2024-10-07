@@ -9,6 +9,8 @@ db_host=os.environ.get('DB_HOST')
 db_user=os.environ.get('DB_USER')
 db_password=os.environ.get('DB_PASSWORD')
 db_database=os.environ.get('DB_NAME')
+table_name = os.environ.get('TABLE_NAME', 'default_table_name') # 'default_table_name' - значение по умолчанию
+
 
 # Подключение к базе данных MySQL
 db = mysql.connector.connect(
